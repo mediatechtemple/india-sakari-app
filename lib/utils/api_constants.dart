@@ -1,15 +1,7 @@
-class ApiConstants{
+class ApiConstants {
+  static const String baseUrl = "https://yourapi.com"; // Replace with your API URL
+  static const String advertiseEndpoint = "/advertise";
 
-  //Base Url
-  static String baseURL="";
-
-  //End Points Same as BaseURl
-
-
-
-
-
-    // If need
   static const Map<String, String> headers = {
     'Content-Type': 'application/json',
   };

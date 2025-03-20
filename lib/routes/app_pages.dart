@@ -1,12 +1,15 @@
 import 'package:get/get.dart';
 
+import '../bindings/advertise_with_us_binding.dart';
+import '../utils/advertise_with_us.dart';
+
 class AppPages {
   static final routes = [
-    // GetPage(
-    //   name: '/auth',
-    //   page: () => AuthPage(),
-    //   binding: AuthBinding(),
-    // ),
+    GetPage(
+      name: '/advertiseWithUsPage',
+      page: () => AdvertiseWithUsPage(),
+      binding: AdvertiseWithUsBinding(),
+    ),
     // GetPage(
     //   name: '/home',
     //   page: () => HomePage(),

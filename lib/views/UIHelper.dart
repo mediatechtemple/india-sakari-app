@@ -54,6 +54,33 @@ class UIHelper {
   }
 
 
+  static editText(TextEditingController controller,String hint,int? minLine){
+    return TextField(
+      controller: controller,
+      minLines: minLine,
+      decoration: InputDecoration(
+        hintText: hint,
+        filled: false,
+        fillColor: Colors.white,
+
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),  // Rounded corners
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),  // Rounded corners when focused
+          borderSide: BorderSide(color: Constant.bgColor, width: 2), // Focused border color
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),  // Rounded corners when enabled
+          borderSide: BorderSide(color: Constant.bgColor, width: 2), // Border color when enabled
+        ),
+        contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      ),
+    );
+
+  }
+
+
   static slider(){
     return CarouselSlider(
       options: CarouselOptions(height: 150.0,

@@ -11,7 +11,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-   MyApp({super.key});
+  MyApp({super.key});
   final ThemeViewModel themeViewModel = Get.put(ThemeViewModel());
 
   // This widget is the root of your application.

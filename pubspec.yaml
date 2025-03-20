@@ -65,6 +65,9 @@ flutter:
   assets:
     - assets/drawables/
     - assets/icons/
+   # - assets/images/ssc_gd.png
+   # - assets/images/esb.png
+   # - assets/images/default.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
