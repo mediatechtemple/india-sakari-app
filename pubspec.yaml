@@ -38,6 +38,10 @@ dependencies:
   dio: ^5.8.0+1
   google_fonts: ^6.2.1
   carousel_slider: ^5.0.0
+  firebase_core: ^3.12.1
+  firebase_messaging: ^15.2.4
+  firebase_analytics: ^11.4.1
+  firebase_crashlytics: ^4.3.1
 
 dev_dependencies:
   flutter_test:
@@ -65,7 +69,8 @@ flutter:
   assets:
     - assets/drawables/
     - assets/icons/
-   # - assets/images/ssc_gd.png
+
+   # - assets/images/ssc_gd.p
    # - assets/images/esb.png
    # - assets/images/default.png
 
