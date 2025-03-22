@@ -17,5 +17,17 @@ final ThemeData lightTheme = ThemeData(
     textTheme: ButtonTextTheme.primary,
   ),
   cardColor: Colors.white,
+
+
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    backgroundColor: Colors.white,   // Background of the Bottom Navigation Bar
+    selectedItemColor: Colors.blue,  // Color for selected items
+    unselectedItemColor: Colors.black54, // Color for unselected items
+  ),
+
+  // Icon Theme
+  iconTheme: IconThemeData(
+    color: Colors.black,  // Default icon color for light mode
+  ),
 );
 
