@@ -56,11 +56,6 @@ class MyApp extends StatelessWidget {
         //   ...AppPages.pages,    // Dynamic routes from AppPages
         // ],
 
-        routes: {
-          '/': (context) => const Homescreen(),
-          '/mock_test': (context) => MockTestPage(),
-          '/notification': (context) => NotificationPage(),
-        },
       );
     });
   }

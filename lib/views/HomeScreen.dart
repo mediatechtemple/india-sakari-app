@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:indiasarkarinaukri/views/Drawer.dart';
 import 'package:indiasarkarinaukri/views/UIHelper.dart';
 
 import '../utils/ScreenUtils.dart';
 import '../utils/notification_page.dart';
+import '../viewmodels/TabControllerViewModel.dart';
+import 'CustomBottomNavBar.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
@@ -29,7 +33,7 @@ class _HomescreenState extends State<Homescreen> {
 
     double screenWidth = ScreenUtils.getScreenWidth(context);
     double screenHeight = ScreenUtils.getScreenHeight(context);
-
+    final TabControllerViewModel tabController = Get.put(TabControllerViewModel());
     return Scaffold(
       appBar: AppBar(
         title: UIHelper.textview(
@@ -155,55 +159,12 @@ class _HomescreenState extends State<Homescreen> {
               ),
               SizedBox(height: screenHeight * 0.02),
 
-              // Advertisement With Us Section
-              GestureDetector(
-                child: Container(
-                  padding: EdgeInsets.all(15),
-                  color: Colors.blue, // Adjust the color as needed
-                  child: Center(
-                    child: UIHelper.textview(
-                      "Advertisement With Us",
-                      FontWeight.bold,
-                      18,
-                      GoogleFonts.poppins(),
-                      Colors.white,
-                    ),
-                  ),
-                ),
-              ),
             ],
           ),
         ),
       ),
       // Bottom Navigation Bar with black icons
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
-        selectedItemColor: Colors.black, // Selected item color black
-        unselectedItemColor: Colors.black, // Unselected item color black
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.bookmark_border),
-            label: 'Saved',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.assignment_rounded),
-            label: 'MockTest',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.work),
-            label: 'Jobs',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.library_books),
-            label: 'Library',
-          ),
-        ],
-      ),
+      bottomNavigationBar: CustomBottomNavBar()
     );
   }
 }

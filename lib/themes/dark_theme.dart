@@ -19,4 +19,18 @@ final ThemeData darkTheme = ThemeData(
     textTheme: ButtonTextTheme.primary,
   ),
   cardColor: Colors.black54,
+
+  // Bottom Navigation Bar theme (for BottomNavigationBar items)
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    backgroundColor: Colors.black87,    // Background of the Bottom Navigation Bar
+    selectedItemColor: Colors.white,    // Color for selected items
+    unselectedItemColor: Colors.grey,   // Color for unselected items
+  ),
+
+  // Icon Theme
+  iconTheme: IconThemeData(
+    color: Colors.white, // Default icon color for dark mode
+  ),
+
 );
+

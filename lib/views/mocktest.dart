@@ -1,22 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+import 'CustomBottomNavBar.dart';
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Mock Test App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MockTestPage(),
-    );
-  }
-}
 
 class MockTestPage extends StatelessWidget {
   @override
@@ -104,6 +89,7 @@ class MockTestPage extends StatelessWidget {
           ],
         ),
       ),
+        bottomNavigationBar: CustomBottomNavBar()
     );
   }
 
