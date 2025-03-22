@@ -154,23 +154,6 @@ class _HomescreenState extends State<Homescreen> {
                 color: Colors.red,
               ),
               SizedBox(height: screenHeight * 0.02),
-
-              // Advertisement With Us Section
-              GestureDetector(
-                child: Container(
-                  padding: EdgeInsets.all(15),
-                  color: Colors.blue, // Adjust the color as needed
-                  child: Center(
-                    child: UIHelper.textview(
-                      "Advertisement With Us",
-                      FontWeight.bold,
-                      18,
-                      GoogleFonts.poppins(),
-                      Colors.white,
-                    ),
-                  ),
-                ),
-              ),
             ],
           ),
         ),

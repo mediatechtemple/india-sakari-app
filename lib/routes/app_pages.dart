@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 import '../bindings/advertise_with_us_binding.dart';
-import '../utils/advertise_with_us.dart';
+import '../views/advertise_with_us.dart';
 
 class AppPages {
   static final routes = [
