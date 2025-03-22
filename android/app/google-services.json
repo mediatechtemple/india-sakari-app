@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "158571487436",
+    "project_id": "indiasarkarinauikri2024",
+    "storage_bucket": "indiasarkarinauikri2024.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158571487436:android:0aa94e9d79a2be81382269",
+        "android_client_info": {
+          "package_name": "com.india.indiasarkarinaukri.indiasarkarinaukri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxCn-KOrCyhuCwXTYC3uQzjGnnBqUP9ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158571487436:android:635d08932b098710382269",
+        "android_client_info": {
+          "package_name": "com.mtt.indiasarkarinaukri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxCn-KOrCyhuCwXTYC3uQzjGnnBqUP9ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
