@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:indiasarkarinaukri/modals/Jobs.dart';
 import 'package:indiasarkarinaukri/utils/constants.dart';
 
 class UIHelper {
@@ -114,7 +115,7 @@ class UIHelper {
 
   static cardviewwithlist({
     required String title,
-    required List<String> items,
+    required List<Jobs> items,
     required Color color,
   }) {
     return Card(
@@ -139,7 +140,7 @@ class UIHelper {
               ),
             ),
             SizedBox(height: 8),
-            ...items.map((item) =>
+            ...items.take(10).map((item) =>
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 4.0),
                   child: Row(
@@ -147,7 +148,8 @@ class UIHelper {
                       Icon(Icons.circle, size: 8, color: color),
                       SizedBox(width: 8),
                       Expanded(
-                          child: Text(item, style: TextStyle(fontSize: 14))),
+                          child: InkWell(onTap: (){print(item.jobUrl.toString());},
+                              child: Text(item.jobUrl, style: TextStyle(fontSize: 14)))),
                     ],
                   ),
                 )),
@@ -155,7 +157,9 @@ class UIHelper {
             Align(
               alignment: Alignment.centerRight,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+
+                },
                 style: OutlinedButton.styleFrom(
                   side: BorderSide(color: color),
                 ),
