@@ -3,7 +3,7 @@ import 'package:get/get_navigation/src/routes/get_route.dart';
 import '../views/advertise_with_us.dart';
 import '../utils/notification_page.dart';
 import '../views/HomeScreen.dart';
-import '../views/mocktest.dart';
+import '/views/mocktest.dart';
 
 class AppRoutes {
   static const String home = '/';

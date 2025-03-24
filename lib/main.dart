@@ -10,7 +10,7 @@ import 'package:indiasarkarinaukri/themes/light_theme.dart';
 import 'package:indiasarkarinaukri/utils/notification_page.dart';
 import 'package:indiasarkarinaukri/viewmodels/theme_viewmodel.dart';
 import 'package:indiasarkarinaukri/views/HomeScreen.dart';
-import 'package:indiasarkarinaukri/views/mocktest.dart';
+import 'package:indiasarkarinaukri/views/library.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 

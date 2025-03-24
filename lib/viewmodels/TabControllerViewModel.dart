@@ -23,6 +23,8 @@ class TabControllerViewModel extends GetxController {
       Get.offNamed(AppRoutes.mockTest);
 
     }else if (index == 5) {
+      Get.offNamed(AppRoutes.librarypage);
+
 
     }else  {
      
