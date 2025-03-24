@@ -13,7 +13,7 @@ class AppRoutes {
 
 
   static List<GetPage> routes = [
-    GetPage(name: home, page: () => const Homescreen()),
+    GetPage(name: home, page: () =>  Homescreen()),
     GetPage(name: mockTest, page: () => MockTestPage()),
     GetPage(name: notification, page: () => NotificationPage()),
     GetPage(name: advertisementpage, page: () => AdvertiseWithUsPage()),

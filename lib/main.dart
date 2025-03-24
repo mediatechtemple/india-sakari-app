@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+import 'package:indiasarkarinaukri/routes/app_pages.dart';
 import 'package:indiasarkarinaukri/routes/app_routes.dart';
 import 'package:indiasarkarinaukri/themes/dark_theme.dart';
 import 'package:indiasarkarinaukri/themes/light_theme.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: themeViewModel.isDarkMode.value ? darkTheme : lightTheme,
         initialRoute: AppRoutes.home,  // Set the initial route from AppRoutes
-        getPages: AppRoutes.routes,
+        getPages: AppPages.routes,
         // getPages: [
         //   ...AppRoutes.routes,  // Static routes from AppRoutes
         //   ...AppPages.pages,    // Dynamic routes from AppPages
