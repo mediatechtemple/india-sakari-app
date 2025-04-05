@@ -7,10 +7,12 @@ import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:indiasarkarinaukri/routes/app_routes.dart';
 import 'package:indiasarkarinaukri/themes/dark_theme.dart';
 import 'package:indiasarkarinaukri/themes/light_theme.dart';
-import 'package:indiasarkarinaukri/utils/notification_page.dart';
 import 'package:indiasarkarinaukri/viewmodels/theme_viewmodel.dart';
+<<<<<<< HEAD
 import 'package:indiasarkarinaukri/views/HomeScreen.dart';
 import 'package:indiasarkarinaukri/views/mocktest.dart';
+=======
+>>>>>>> f7af307 (Changes in home screen)
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 

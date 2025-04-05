@@ -1,6 +1,9 @@
 import 'package:get/get.dart';
 import 'package:indiasarkarinaukri/routes/app_routes.dart';
 
+import '../views/Admission.dart';
+import '../views/Library.dart';
+
 class TabControllerViewModel extends GetxController {
   var currentIndex = 0.obs;
   
@@ -13,19 +16,25 @@ class TabControllerViewModel extends GetxController {
 
   
     } else if (index == 1) {
-     
-      
+
     } else if (index == 2) {
-      
+      print("clickk");
+      Get.to(AppRoutes.admissionPage);
+
     } else if (index == 3) {
-     
+      print("clickkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+      Get.to(AppRoutes.jobsPage);
     } else if (index == 4) {
-      Get.offNamed(AppRoutes.mockTest);
+      Get.to(AppRoutes.mockTest);
 
     }else if (index == 5) {
+<<<<<<< HEAD
+=======
+      Get.toNamed(AppRoutes.libraryPage);
 
-    }else  {
-     
+
+>>>>>>> f7af307 (Changes in home screen)
+
     }
   }
 
