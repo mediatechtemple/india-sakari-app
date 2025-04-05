@@ -28,12 +28,10 @@ class TabControllerViewModel extends GetxController {
       Get.to(AppRoutes.mockTest);
 
     }else if (index == 5) {
-<<<<<<< HEAD
-=======
       Get.toNamed(AppRoutes.libraryPage);
 
 
->>>>>>> f7af307 (Changes in home screen)
+
 
     }
   }

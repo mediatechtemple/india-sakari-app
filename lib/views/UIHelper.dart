@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
+
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:indiasarkarinaukri/modals/AdmissionModel.dart';
@@ -13,7 +12,7 @@ import 'package:indiasarkarinaukri/modals/AnswerKeyPageModel.dart';
 import 'package:indiasarkarinaukri/modals/JobsModel.dart';
 import 'package:indiasarkarinaukri/modals/LatestJobs.dart';
 import 'package:indiasarkarinaukri/modals/ResultsModel.dart';
->>>>>>> f7af307 (Changes in home screen)
+
 import 'package:indiasarkarinaukri/utils/constants.dart';
 
 import '../modals/AdmitCardPortalModel.dart';

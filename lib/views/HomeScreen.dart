@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-<<<<<<< HEAD
-=======
+
 import 'package:indiasarkarinaukri/routes/app_routes.dart';
 import 'package:indiasarkarinaukri/viewmodels/AdmissionViewModel.dart';
 import 'package:indiasarkarinaukri/viewmodels/AdmitCardViewModel.dart';
@@ -10,7 +9,7 @@ import 'package:indiasarkarinaukri/viewmodels/AnswerKeyViewModel.dart';
 import 'package:indiasarkarinaukri/viewmodels/LatestJobsViewModel.dart';
 import 'package:indiasarkarinaukri/viewmodels/ResultsViewModel.dart';
 import 'package:indiasarkarinaukri/views/Appbar.dart';
->>>>>>> f7af307 (Changes in home screen)
+
 import 'package:indiasarkarinaukri/views/Drawer.dart';
 import 'package:indiasarkarinaukri/views/UIHelper.dart';
 import 'package:text_marquee/text_marquee.dart';
@@ -27,15 +26,13 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
-<<<<<<< HEAD
-  // Default selected index for BottomNavigationBar
-  int _selectedIndex = 0;
+
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
-=======
+
   final ScrollController _scrollController = ScrollController();
 
   // Define the search controller here
@@ -57,16 +54,16 @@ class _HomescreenState extends State<Homescreen> {
       duration: Duration(milliseconds: 300),
       curve: Curves.easeInOut,
     );
->>>>>>> f7af307 (Changes in home screen)
+
   }
 
   @override
   Widget build(BuildContext context) {
     double screenWidth = ScreenUtils.getScreenWidth(context);
     double screenHeight = ScreenUtils.getScreenHeight(context);
-<<<<<<< HEAD
+
     final TabControllerViewModel tabController = Get.put(TabControllerViewModel());
-=======
+
 
     // Getting instances of the ViewModels using GetX
     final TabControllerViewModel tabController = Get.find();
@@ -83,11 +80,10 @@ class _HomescreenState extends State<Homescreen> {
     admitCardViewModel.fetchadmitcard();
     admissionViewModelViewModel.fetchadmission();
 
->>>>>>> f7af307 (Changes in home screen)
     return Scaffold(
       appBar: CustomAppBar(),
       drawer: CustomDrawer(),
-<<<<<<< HEAD
+
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(left: 20, right: 20, top: 0, bottom: 0),
@@ -160,8 +156,8 @@ class _HomescreenState extends State<Homescreen> {
         ),
       ),
       // Bottom Navigation Bar with black icons
-      bottomNavigationBar: CustomBottomNavBar()
-=======
+      bottomNavigationBar: CustomBottomNavBar(),
+
       body: Obx(() {
         if (jobsViewModel.isLoading.value) {
           return Center(child: CircularProgressIndicator());
